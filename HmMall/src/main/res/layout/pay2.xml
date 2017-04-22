@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/layout_titlebar" />
+
+    <Button
+        android:id="@+id/appay_btn"
+       android:layout_marginTop="20dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/btn_bg_selector"
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:text="服务器签名支付"
+        android:textColor="@color/white"
+        />
+
+</LinearLayout>

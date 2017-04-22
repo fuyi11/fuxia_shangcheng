@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.itheima.fuxiamall">
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />  <!-- 震动权限 -->
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- 使用照相机权限 -->
+
+    <application
+        android:name="com.itheima.fuxiamall.global.HeimaMallApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.itheima.fuxiamall.ui.activity.SetServerActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.itheima.fuxiamall.ui.activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+
+        </activity>
+        <activity android:name="com.itheima.fuxiamall.ui.activity.MainActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <meta-data
+            android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule"
+            android:value="GlideModule" />
+
+        <activity android:name="com.itheima.fuxiamall.ui.activity.EditProfileActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name="com.itheima.fuxiamall.ui.activity.ShowOrderActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.itheima.fuxiamall.ui.activity.AddressManagerActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.itheima.fuxiamall.ui.activity.AddAddressActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.itheima.fuxiamall.ui.activity.LoginActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.itheima.fuxiamall.ui.activity.GoodsDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.itheima.fuxiamall.ui.activity.OrderConfirmActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.itheima.fuxiamall.ui.activity.PayActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.itheima.fuxiamall.ui.activity.OrderDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.itheima.fuxiamall.ui.activity.AboutActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.itheima.fuxiamall.ui.activity.ImageScaleActivity"
+            android:theme="@style/FullscreenTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.itheima.fuxiamall.ui.activity.ZxingActivity"
+            android:theme="@style/FullscreenTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.itheima.fuxiamall.ui.activity.WXPayActivity"
+            android:screenOrientation="portrait"/>
+
+    </application>
+
+</manifest>
